@@ -1,0 +1,8 @@
+A. Moet een primaire sleutel per se numeriek zijn?:
+        Nee, een primaire sleutel kan ook een tekst zijn zolang deze maar elke keer uniek is, nummers worden vaker gebruikt omdat deze makkelijker uniek te maken is met een autoincrement.
+		
+B. En waarom kiest een database-ontwerper vaak voor een auto-incrementing waarde bij een primaire sleutel? 
+        Omdat dit ervoor zorgt dat de primaire sleutel altijd automatisch uniek zal zijn.
+		
+C. Hoe zou je het aantal ingevoerde spelers per elftal kunnen controleren met een SQLstatement? (tip: zoek naar de SQL-function: COUNT).
+        SELECT COUNT(id) AS IngevoerdeSpelers FROM voetballers WHERE elftal_id = 1  // Zo laat je de hoeveelheid spelers zien die in elftal 1 zitten.
